@@ -1,0 +1,5 @@
+{
+  "name": "pss-pf-dev",
+  "description": "Test Apex lambda project",
+  "defaultEnvironment": "dev"
+}

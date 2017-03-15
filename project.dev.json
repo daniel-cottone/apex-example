@@ -1,0 +1,6 @@
+{
+  "name": "pss-pf-dev",
+  "description": "Test Apex lambda project",
+  "profile": "asurion-dev.pspdevops",
+  "role": "arn:aws:iam::091036132616:role/lambda_basic_vpc_execution"
+}

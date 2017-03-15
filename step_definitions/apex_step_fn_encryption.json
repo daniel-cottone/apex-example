@@ -1,0 +1,24 @@
+{
+  "Comment": "A test of AWS Step Functions using encrypt/decrypt lambdas.",
+  "StartAt": "EncryptState",
+  "States": {
+    "EncryptState": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:091036132616:function:pss-pf-dev_apex-step-fn-encrypt",
+      "ResultPath": "$.encrypted",
+      "Next": "DecryptState"
+    },
+    "DecryptState": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:091036132616:function:pss-pf-dev_apex-step-fn-decrypt",
+      "InputPath": "$.encrypted",
+      "ResultPath": "$.decrypted",
+      "Next": "EchoState"
+    },
+    "EchoState": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:091036132616:function:pss-pf-dev_apex-step-fn-echo",
+      "End": true
+    }
+  }
+}
