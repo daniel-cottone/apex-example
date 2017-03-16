@@ -3,11 +3,11 @@ console.log('beginning execution');
 var aws = require('aws-sdk');
 var kms = new aws.KMS({ region: process.env.AWS_REGION });
 
-exports.handle = function (event, context, callback) {
+exports.handle = (event, context, callback) => {
   console.log('processing event: %j', event);
   console.log('processing context: %j', context);
 
-  var decryptProps = function (obj) {
+  var decryptProps = (obj) => {
     return Promise.all(Object.keys(obj).map(e => {
       var params = {
         'CiphertextBlob': new Buffer(event[e], 'base64')

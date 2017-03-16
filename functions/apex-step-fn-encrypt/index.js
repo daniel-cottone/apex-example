@@ -3,11 +3,11 @@ console.log('beginning execution');
 var aws = require('aws-sdk');
 var kms = new aws.KMS({ region: process.env.AWS_REGION });
 
-exports.handle = function (event, context, callback) {
+exports.handle = (event, context, callback) => {
   console.log('processing event: %j', event);
   console.log('processing context: %j', context);
 
-  var encryptProps = function (obj) {
+  var encryptProps = (obj) => {
     return Promise.all(Object.keys(obj).map(e => {
       var params = {
         'KeyId': process.env.KMS_KEY_ID,

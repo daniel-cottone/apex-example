@@ -1,0 +1,14 @@
+{
+  "name": "apex-test-fn",
+  "version": "1.0.0",
+  "description": "A test lambda for AWS Step Functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
