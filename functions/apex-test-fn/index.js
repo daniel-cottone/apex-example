@@ -1,6 +1,7 @@
+'use strict';
 console.log('beginning execution');
 
-var _ = require('lodash');
+const _ = require('lodash');
 
 exports.handle = (event, context, callback) => {
   console.log('processing event: %j', event);
