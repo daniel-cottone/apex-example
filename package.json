@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "An example of apex configuration and usage",
   "scripts": {
-    "test": "mocha --recursive functions/**/*.test.js --require babel-polyfill --compilers js:babel-register",
-    "test:fn": "mocha test/*.test.js --require babel-polyfill --compilers js:babel-register"
+    "test": "mocha --recursive functions/**/*.test.js --require babel-polyfill --compilers js:babel-register"
   },
   "dependencies": {
     "apex.js": "^1.0.0",
