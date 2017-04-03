@@ -1,9 +1,9 @@
 'use strict';
-console.log('beginning execution');
+import winston from 'winston';
 
 exports.handle = (event, context, callback) => {
-  console.log('processing event: %j', event);
-  console.log('processing context: %j', context);
+  winston.log('debug', `processing event: ${event}`);
+  winston.log('debug', `processing context: ${context}`);
   event.stepOne = 'Step 1 got called!';
   callback(null, event);
 };

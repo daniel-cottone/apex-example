@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "apex.js": "^1.0.0",
-    "babel-polyfill": "^6.3.14"
+    "babel-polyfill": "^6.3.14",
+    "winston": "^2.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -24,7 +25,7 @@
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "mocha-webpack": "^0.7.0",
-    "mock-lambda-context": "0.0.1",
+    "sinon": "^2.0.0-pre.6",
     "webpack": "^1.12.13",
     "webpack-node-externals": "^1.5.4"
   }

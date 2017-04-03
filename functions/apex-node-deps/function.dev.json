@@ -1,3 +1,6 @@
 {
-  "description": "Testing node dependencies"
+  "description": "Testing node dependencies",
+  "hooks": {
+    "deploy": "../../node_modules/.bin/mocha-webpack --webpack-config ../../webpack.config-test.js test/*.test.js"
+  }
 }
