@@ -20,9 +20,11 @@
     "babel-preset-stage-0": "^6.3.13",
     "babel-register": "^6.24.0",
     "babel-runtime": "^6.18.0",
+    "chai": "^3.5.0",
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "mocha-webpack": "^0.7.0",
+    "mock-lambda-context": "0.0.1",
     "webpack": "^1.12.13",
     "webpack-node-externals": "^1.5.4"
   }
