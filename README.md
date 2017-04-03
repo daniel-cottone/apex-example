@@ -13,3 +13,7 @@ Installation
 Usage
 -----
 You can run any of the [Apex commands](http://apex.run/#deploying-functions) from the root directory. The Step Function definition configurations which were used to connect the deployed lambdas can be viewed in the `step_definitions` directory.
+
+Testing
+-----
+You can run `npm test` to run unit tests with karma. Apex will automatically run unit tests before deployment.
