@@ -1,3 +1,4 @@
 {
-  "description": "An echo function for Apex test step function."
+  "description": "An echo function for Apex test step function.",
+  "handler": "lib.handle"
 }

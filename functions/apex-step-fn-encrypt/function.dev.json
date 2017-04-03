@@ -1,6 +1,7 @@
 {
   "description": "Encrypt function for Apex step function.",
   "role": "arn:aws:iam::091036132616:role/service-role/PSS-PF-LiLy-Test-Role_1",
+  "handler": "lib.handle",
   "environment": {
     "KMS_KEY_ID": "arn:aws:kms:us-east-1:091036132616:key/7db239d0-d212-4d59-80f1-ba8596766818"
   }

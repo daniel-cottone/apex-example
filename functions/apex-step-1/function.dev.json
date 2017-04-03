@@ -1,5 +1,6 @@
 {
   "description": "Step 1 for the Apex test step function.",
+  "handler": "lib.handle",
   "hooks": {
     "deploy": "../../node_modules/.bin/mocha-webpack --webpack-config ../../webpack.config-test.js test/*.test.js"
   }
