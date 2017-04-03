@@ -1,6 +1,6 @@
 {
   "description": "Step 1 for the Apex test step function.",
   "hooks": {
-    "deploy": "../../node_modules/.bin/mocha test/*.test.js --require babel-polyfill --compilers js:babel-register"
+    "deploy": "../../node_modules/.bin/mocha-webpack --webpack-config ../../webpack.config-test.js test/*.test.js"
   }
 }

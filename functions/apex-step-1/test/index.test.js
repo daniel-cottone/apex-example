@@ -1,8 +1,7 @@
 'use strict';
 import {handle} from '../src';
 import assert from 'assert';
-
-let expected = { stepOne: 'Step 1 got called!' };
+import expected from './expected.json';
 
 describe('apex-step-1', () => {
   it('should return "Step 1 got called!"', () => {
