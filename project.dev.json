@@ -4,7 +4,7 @@
   "description": "Test Apex lambda project",
   "profile": "asurion-dev.pspdevops",
   "role": "arn:aws:iam::091036132616:role/lambda_basic_vpc_execution",
-  "runtime": "nodejs",
+  "runtime": "nodejs4.3",
   "handler": "lib.default",
   "hooks": {
     "build": "../../node_modules/.bin/webpack --config ../../webpack.config.js --bail",
