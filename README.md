@@ -9,6 +9,7 @@ Installation
 -----
 * Install Apex: `curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sudo sh`
 * Setup AWS config (if you haven't already): `echo -e "[profile asurion-dev.pspdevops]\nregion = us-east-1" >> ~/.aws/config`
+* Install modules: `npm install`
 
 Usage
 -----
